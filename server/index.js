@@ -39,7 +39,7 @@ app.post('/api/chat', async (req, res) => {
     try {
         // Call the API with the conversation history, which includes the system prompt (only sent once)
         const response = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo',
+            model: 'gpt-4o-mini',
             messages: conversationHistory,
         });
 
